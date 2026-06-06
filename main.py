@@ -133,7 +133,7 @@ from typing import Optional
 import asyncio
 
 BASE_DIR = os.path.dirname(__file__)
-EXCEL_FILE = os.getenv("EXCEL_FILE_PATH", "/tmp/expenses.xlsx")
+EXCEL_PATH = os.path.join(BASE_DIR, "/tmp/expenses.xlsx")
 
 mcp = FastMCP("ExpenseTracker")
 
